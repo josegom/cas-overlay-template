@@ -60,7 +60,7 @@
 
     <bean id="ldapAuthenticationHandler"
           class="org.jasig.cas.authentication.LdapAuthenticationHandler"
-          p:principalIdAttribute="uid"
+          p:principalIdAttribute="${ldap.principalIdAttribute}"
           c:authenticator-ref="authenticator">
         <property name="principalAttributeMap">
             <map>
